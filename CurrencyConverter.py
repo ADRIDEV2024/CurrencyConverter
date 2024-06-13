@@ -27,7 +27,7 @@ def convert_currency():
     response = req.request("GET", url, header=header, data=payload)
     status_code = response.status_code
     
-    if status_code == 404:
+    if status_code != 200:
         response = response.json()
         print("Error response" + str(response))
         quit()
