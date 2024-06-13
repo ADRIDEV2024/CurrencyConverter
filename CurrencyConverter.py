@@ -19,7 +19,7 @@ def convert_currency():
         else:
             break
     
-    url = 
+    url = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
     payload = {}
     header = {
         "apikey: config.apikey"  
