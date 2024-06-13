@@ -24,10 +24,10 @@ def convert_currency():
     header = {
         "apikey: config.apikey"  
     } 
-    response = req.request("GET", url, header=header, data=payload)
+    response = req.request("GET", url, header=header)
     status_code = response.status_code
     
-    if status_code != 200:
+    if status_code == 404:
         response = response.json()
         print("Error response" + str(response))
         quit()
