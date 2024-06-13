@@ -19,7 +19,7 @@ def convert_currency():
         else:
             break
     
-    url = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
+    url = 
     payload = {}
     header = {
         "apikey: config.apikey"  
@@ -33,7 +33,7 @@ def convert_currency():
         quit()
     
     response = response.json()
-    print("Convertion result: " + response )
+    print("Convertion result: " + str(response))
 
 if __name__ == "__main__":
     convert_currency()
