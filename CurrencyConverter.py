@@ -24,7 +24,7 @@ def convert_currency():
     header = {
         "apikey: config.apikey"  
     } 
-    response = req.request("GET", url, header=header)
+    response = req.request("GET", url, header=header, data=payload)
     status_code = response.status_code
     
     if status_code == 404:
@@ -33,7 +33,7 @@ def convert_currency():
         quit()
     
     response = response.json()
-    print("Convertion result: " + str(response))
+    print("Convertion result: " + response )
 
 if __name__ == "__main__":
     convert_currency()
