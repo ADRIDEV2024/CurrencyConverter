@@ -21,14 +21,16 @@ def convert_currency():
     
     url = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
     payload = {}
-    header = {"apikey: config.apikey"} 
+    header = {
+        "apikey: config.apikey"
+    } 
     response = req.request("GET", url, header=header, data=payload)
     status_code = response.status_code
     
     if status_code != 200:
         response = response.json()
         print("Error response" + str(response))
-        quit()
+        break
     
     response = response.json()
     print("Convertion result: " + str(response))
