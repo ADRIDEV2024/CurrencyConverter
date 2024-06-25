@@ -30,10 +30,10 @@ def convert_currency():
     if status_code != 200:
         response = response.json()
         print("Error response" + str(response))
-        break
+        quit()
     
     response = response.json()
-    print("Convertion result: " + str(response))
+    print("Convertion result: " + str(response.json())
 
 if __name__ == "__main__":
     convert_currency()
