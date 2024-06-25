@@ -31,7 +31,7 @@ def convert_currency():
         quit()
     
     response = response.json()
-    print("Convertion result: " + str(response.json())
+    print("Convertion result: " + str(response)
 
 if __name__ == "__main__":
     convert_currency()
