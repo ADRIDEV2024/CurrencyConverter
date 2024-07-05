@@ -1,7 +1,6 @@
 import requests as req
 from config import apikey
-import requests as req
-from config import apikey
+
 
 def convert_currency():
     initial_currency = input("\nEnter your initial currency : \n")
