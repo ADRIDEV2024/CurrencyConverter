@@ -16,7 +16,7 @@ def convert_currency():
             print("Sorry, the amount needs to be greater than 0")
             continue
         else:
-            exit(0)
+            break
     
     url = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
     payload = {}
