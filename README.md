@@ -1,6 +1,6 @@
 # Currency Converter
 
-![](https://github.com/ADRIDEV2024/CurrencyConverter/assets/163412333/e71f5878-f3b7-4153-8151-ac921832bd2d)
+![IMAGE](https://github.com/ADRIDEV2024/CurrencyConverter/assets/163412333/e71f5878-f3b7-4153-8151-ac921832bd2d)
 
 En este proyecto he importado el módulo requests y he utilizado la api Fixer para emular un sencillo sistema de cambio de divisas que convierte casi cualquier moneda a otra que quieras cambiar. Desarrollé este proyecto porque resuelve un problema del mundo real. Este proyecto fue el primero que realicé cuando empecé a aprender y practicar Python.
 
