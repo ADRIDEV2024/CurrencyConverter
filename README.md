@@ -1,4 +1,4 @@
-# Currency Converter
+## Currency Converter
 
 ![tasa-de-cambio-1](https://github.com/ADRIDEV2024/CurrencyConverter/assets/163412333/e71f5878-f3b7-4153-8151-ac921832bd2d)
 
