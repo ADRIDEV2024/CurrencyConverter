@@ -3,7 +3,7 @@ from config import apikey
 
 
 def convert_currency():
-    initial_currency = input("\nEnter your initial currency : \n")
+    initial_currency = input("Enter your initial currency : \n")
     target_currency = input("Enter your target currency :\n ")
     
     while True:
