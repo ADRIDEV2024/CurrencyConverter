@@ -7,8 +7,10 @@ def convert_currency():
     target_currency = input("Enter your target currency:\n ")
     
     while True:
+        
         try:
             amount = float(input("Enter the amount: \n"))
+            
         except TypeError as error:
             print("Sorry, the amount needs to be numeric\n", error)
         
