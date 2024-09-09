@@ -29,7 +29,7 @@ def convert_currency():
     if status_code != 200:
         response = response.json()
         print("Error response" + str(response))
-        quit()
+        exit()
     
     response = response.json()
     print("Convertion result: " + str(response)
