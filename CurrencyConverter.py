@@ -15,7 +15,7 @@ def convert_currency():
             print("Sorry, the amount needs to be numeric\n", error)
         
         if not amount > 0:
-            print("Sorry, the amount needs to be greater than 0")
+            print("Sorry, the amount needs to be greater than 0\n")
             continue
         else:
             break
