@@ -15,12 +15,12 @@ def convert_currency():
             print("Sorry, the amount needs to be numeric\n", error)
         
         if not amount > 0:
-            print("Sorry, the amount needs to be greater than 0\n")
+            print("Sorry, the amount needs to be greater than 0")
             continue
         else:
             break
     
-    url = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
+    url = "https://api.apilayer.com/fixer/convert?from={from}&from={from}&amount={amount}"
     payload = {}
     header = {"apikey: config.apikey"} 
     response = req.request("GET", url, header=header, data=payload)
