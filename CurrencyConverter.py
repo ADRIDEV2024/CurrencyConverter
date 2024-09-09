@@ -20,7 +20,7 @@ def convert_currency():
         else:
             break
     
-    url = "https://api.apilayer.com/fixer/convert?from={from}&from={from}&amount={amount}"
+    url = "https://api.apilayer.com/fixer/convert?from={from}&to={to}&amount={amount}"
     payload = {}
     header = {"apikey: config.apikey"} 
     response = req.request("GET", url, header=header, data=payload)
